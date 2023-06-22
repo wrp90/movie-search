@@ -28,7 +28,7 @@ const MoviesPage = () => {
 
     const searchMovies = async (event) => {
         event.preventDefault();
-        const url = `http://www.omdbapi.com/?s=${searchTerm}&apikey=7bd43d9f`;
+        const url = `https://www.omdbapi.com/?s=${searchTerm}&apikey=7bd43d9f`;
         
         fetch(url)
         .then((response) => response.json())
