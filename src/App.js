@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="container">
       <h1>React Movie App</h1>
-      <BrowserRouter>
+      <BrowserRouter basename={ `/${process.env.PUBLIC_URL}`}>
         <Routes>
           <Route path="/" element={<MoviesPage />}/>
           <Route path="/movie/:movieId" element={<SingleMovie />}/>
